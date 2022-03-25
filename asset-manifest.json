@@ -1,14 +1,12 @@
 {
   "files": {
-    "main.css": "/tissue/static/css/main.75080ee6.css",
-    "main.js": "/tissue/static/js/main.88df2e33.js",
+    "main.css": "/tissue/static/css/main.ae943f9c.css",
+    "main.js": "/tissue/static/js/main.9ed2d194.js",
     "static/js/787.2c4fddbf.chunk.js": "/tissue/static/js/787.2c4fddbf.chunk.js",
     "static/media/laura.JPEG": "/tissue/static/media/laura.f6fc77c5a4daa6466318.JPEG",
     "static/media/3.JPEG": "/tissue/static/media/3.402aa7bfd3993bd27ad7.JPEG",
-    "static/media/vid_laura.mp4": "/tissue/static/media/vid_laura.288a6fa1d2faeddcf4b8.mp4",
     "static/media/4.JPEG": "/tissue/static/media/4.db83e617358fcda290d1.JPEG",
     "static/media/2.png": "/tissue/static/media/2.33c9438ebc798372dfeb.png",
-    "static/media/parallax.png": "/tissue/static/media/parallax.d5d9fcd5edaffbcb8567.png",
     "static/media/5.png": "/tissue/static/media/5.f007bd8b5a79aab49226.png",
     "static/media/1.png": "/tissue/static/media/1.f7eeae83d298bdefdf26.png",
     "static/media/1.PNG": "/tissue/static/media/1.8f2ee99686d62915e0a3.PNG",
@@ -16,12 +14,12 @@
     "static/media/simpletix.otf": "/tissue/static/media/simpletix.74e3bf274b780e3b0c7b.otf",
     "static/media/minimal.otf": "/tissue/static/media/minimal.8420015aee7e2b623731.otf",
     "index.html": "/tissue/index.html",
-    "main.75080ee6.css.map": "/tissue/static/css/main.75080ee6.css.map",
-    "main.88df2e33.js.map": "/tissue/static/js/main.88df2e33.js.map",
+    "main.ae943f9c.css.map": "/tissue/static/css/main.ae943f9c.css.map",
+    "main.9ed2d194.js.map": "/tissue/static/js/main.9ed2d194.js.map",
     "787.2c4fddbf.chunk.js.map": "/tissue/static/js/787.2c4fddbf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.75080ee6.css",
-    "static/js/main.88df2e33.js"
+    "static/css/main.ae943f9c.css",
+    "static/js/main.9ed2d194.js"
   ]
 }
