@@ -13,6 +13,16 @@
   }
 }
 
+@font-face {
+  font-family: Minimal;
+  src: url('./fonts/minimal.otf') format("opentype");
+}
+
+@font-face {
+  font-family: Simpletix;
+  src: url('./fonts/simpletix.otf') format("opentype");
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

@@ -1,0 +1,42 @@
+$small: 300px;
+$medium: 900px;
+#headline{
+
+    letter-spacing: 2px;
+    color : whitesmoke;
+    font-family: 'Simpletix';
+    
+
+
+
+  //some CSS
+  @media screen and (min-width: $small) {
+    font-size:1.2em;
+  }
+  @media screen and (min-width: $medium) {
+      font-size: 1.5em;
+  
+  }
+
+   
+
+}
+
+.center{
+    margin : 15%;
+    text-align: center;
+    @media screen and (max-width: $small) {
+      margin: 10%;
+    }
+    
+}
+.child{
+width: 100%;
+height: auto;
+}
+.featured-section{
+    display: flex;
+    margin-bottom: 5%;
+    background :#282c34;
+    width: 100%;
+}

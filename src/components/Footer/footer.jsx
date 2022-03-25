@@ -1,0 +1,74 @@
+import React from 'react';
+import './style.scss';
+import SectionHeader from '../SectionHeader/index';
+import Img1 from '../../img/laura.JPEG';
+import AboutCard from '../aboutCard/aboutCard';
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+import { Container } from '@mui/material';
+import Video from '../../img/vid_laura.mp4';
+
+
+
+import styled from 'styled-components';
+import { Paper } from '@mui/material';
+
+const StyledDiv = styled.div`
+bottom:0;
+width:100%;
+height:60px;   /* Height of the footer */
+background:black;
+`
+
+const StyledVideo = styled.video`
+    width:400px;
+    height:auto;
+`
+
+const StyledText = styled.p`
+  color : white;
+  float : right;
+  padding-right:10%;
+`
+const Footer = () =>{
+    return(
+        <>
+                <SectionHeader className="section-header" title="about me" />
+                <div className="parallax2">
+               
+      
+ 
+            
+      </div>
+
+      
+       
+        <section id="about" className='footer'>
+            <Container>
+                    
+        <p className="parallax-text">
+“Tissue” has been the expression of my constant experimentation and exploration of the mystery, of the unknown, of what connects life and death in an endless chiasmus, manifesting in a multi-channel video installation.
+
+Through metaphorical images, I mutated my experience of pain in the face of loss. From the very beginning of this process, I had the idea of ​​using different materials such as my father's CT scans as an analogy to the abstract memories that I had left of him from my childhood and became, over time, more and more subtle.
+
+I carry out this work as if I were on a journey through a meditation process, a process in which I enable myself over and over again to keep mutating and un-covering the pain in always new transforming expressions. Art embraces pain and transforms it. ”Tissue”, my first installation, is a healing journey.
+</p>
+<p className="parallax-text">
+Laura Heiss was born in Germany and has been living in different countries throughout the world always with the same passion: NGOs and their identities, stories. “Tissue” is her first installation. She lives between Ibiza and Buenos Aires.
+
+Welcome</p>
+            
+</Container>
+
+      
+
+        </section>
+        <StyledDiv>
+           <StyledText>Designed by Agora3dStudio</StyledText>
+       </StyledDiv>
+
+        </>
+    )
+}
+
+export default Footer;
