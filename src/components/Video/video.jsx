@@ -1,7 +1,6 @@
 
 import React,{useState} from 'react';
 import styled from 'styled-components';
-import Video from '../../img/vid_laura.mp4';
 //import { useReadyElement } from "@egjs/react-imready";
 import CircularProgress from '@mui/material/CircularProgress';
 import LazyLoad from 'react-lazyload';
@@ -80,7 +79,7 @@ const VideoC = () =>{
     return(
         <>          <VideoContainer>  <LazyLoad>
             {isLoading?<Spinner />:null}
-            <StyledVideo onPlaying={()=>setIsLoading(false)}  src={Video} autoPlay muted loop  />
+            <StyledVideo onPlaying={()=>setIsLoading(false)}  src="https://videodelivery.net/ecd59c39e6b0eb001fc90af3e5868208/downloads/default.mp4" autoPlay muted loop  />
             <Header />
             </LazyLoad></VideoContainer> 
 

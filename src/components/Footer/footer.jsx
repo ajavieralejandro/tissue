@@ -6,7 +6,6 @@ import AboutCard from '../aboutCard/aboutCard';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import { Container } from '@mui/material';
-import Video from '../../img/vid_laura.mp4';
 
 
 

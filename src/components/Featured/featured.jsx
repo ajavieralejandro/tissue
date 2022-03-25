@@ -39,7 +39,7 @@ const Featured = () =>{
              
                 <Grid item sm={12} md={5}>
  
-                <StyledImg src={Img1} />
+                <StyledImg src="https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/4aa17241-9190-4338-36f3-779c42df9e00/public" />
 
                 </Grid>
                 <Grid item sm={12} md={7}>
