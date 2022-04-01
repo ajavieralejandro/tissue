@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "./static/css/main.2e88a5a7.css",
-    "main.js": "./static/js/main.2f7e37c6.js",
-    "static/js/787.2c4fddbf.chunk.js": "./static/js/787.2c4fddbf.chunk.js",
-    "static/media/laura.JPEG": "./static/media/laura.f6fc77c5a4daa6466318.JPEG",
-    "static/media/3.JPEG": "./static/media/3.402aa7bfd3993bd27ad7.JPEG",
-    "static/media/4.JPEG": "./static/media/4.db83e617358fcda290d1.JPEG",
-    "static/media/2.png": "./static/media/2.33c9438ebc798372dfeb.png",
-    "static/media/5.png": "./static/media/5.f007bd8b5a79aab49226.png",
-    "static/media/1.png": "./static/media/1.f7eeae83d298bdefdf26.png",
-    "static/media/1.PNG": "./static/media/1.8f2ee99686d62915e0a3.PNG",
-    "static/media/laura1.jpeg": "./static/media/laura1.7467cde40b52adc8df89.jpeg",
-    "static/media/simpletix.otf": "./static/media/simpletix.74e3bf274b780e3b0c7b.otf",
-    "static/media/minimal.otf": "./static/media/minimal.8420015aee7e2b623731.otf",
-    "index.html": "./index.html",
-    "main.2e88a5a7.css.map": "./static/css/main.2e88a5a7.css.map",
-    "main.2f7e37c6.js.map": "./static/js/main.2f7e37c6.js.map",
-    "787.2c4fddbf.chunk.js.map": "./static/js/787.2c4fddbf.chunk.js.map"
+    "main.css": "/static/css/main.cb8fbb9d.css",
+    "main.js": "/static/js/main.13f8b70e.js",
+    "static/js/787.2c4fddbf.chunk.js": "/static/js/787.2c4fddbf.chunk.js",
+    "static/media/laura.JPEG": "/static/media/laura.f6fc77c5a4daa6466318.JPEG",
+    "static/media/3.JPEG": "/static/media/3.402aa7bfd3993bd27ad7.JPEG",
+    "static/media/4.JPEG": "/static/media/4.db83e617358fcda290d1.JPEG",
+    "static/media/2.png": "/static/media/2.33c9438ebc798372dfeb.png",
+    "static/media/5.png": "/static/media/5.f007bd8b5a79aab49226.png",
+    "static/media/1.png": "/static/media/1.f7eeae83d298bdefdf26.png",
+    "static/media/1.PNG": "/static/media/1.8f2ee99686d62915e0a3.PNG",
+    "static/media/laura1.jpeg": "/static/media/laura1.7467cde40b52adc8df89.jpeg",
+    "static/media/simpletix.otf": "/static/media/simpletix.74e3bf274b780e3b0c7b.otf",
+    "static/media/minimal.otf": "/static/media/minimal.8420015aee7e2b623731.otf",
+    "index.html": "/index.html",
+    "main.cb8fbb9d.css.map": "/static/css/main.cb8fbb9d.css.map",
+    "main.13f8b70e.js.map": "/static/js/main.13f8b70e.js.map",
+    "787.2c4fddbf.chunk.js.map": "/static/js/787.2c4fddbf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e88a5a7.css",
-    "static/js/main.2f7e37c6.js"
+    "static/css/main.cb8fbb9d.css",
+    "static/js/main.13f8b70e.js"
   ]
 }
