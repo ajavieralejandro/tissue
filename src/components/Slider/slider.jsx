@@ -4,6 +4,18 @@ import styled from 'styled-components';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
+
+const StyledArrow1 = styled(ArrowBackIosNewIcon)`
+    font-size : 24px;
+`
+
+
+const StyledArrow2 = styled(ArrowForwardIosIcon)`
+    font-size : 24px;
+`
+
+
+
 const StyledDiv = styled.div`
     background : red;
     width : 100px;
@@ -48,10 +60,10 @@ function Slider(props) {
                 alignItems="center"
                 spacing={2}
             >
-                <Grid item xs={1}><ArrowBackIosNewIcon onClick={()=>moveBack()}  />
+                <Grid item xs={1}><ArrowBackIosNewIcon style={{fontSize:'3rem',color:'white'}} onClick={()=>moveBack()}  />
 </Grid>
                 <Grid item xs={10}>{toRender}</Grid>
-                <Grid item xs={1}><ArrowForwardIosIcon style={{float:'right'}} onClick={()=>addOne()}/></Grid>
+                <Grid item xs={1}><ArrowForwardIosIcon style={{float:'right',fontSize:'3rem',color:'white'}} onClick={()=>addOne()}/></Grid>
 
 
             </Grid>

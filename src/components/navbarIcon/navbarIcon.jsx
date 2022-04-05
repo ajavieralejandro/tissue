@@ -5,6 +5,7 @@ import { Modal } from '@mui/material';
 import Fade from '@mui/material/Fade';
 import { Link,animateScroll as scroll } from 'react-scroll';
 import { Button } from '@mui/material';
+import { Grid } from '@mui/material';
 const StyledLink = styled(Link)`
   font-family: 'Source Code Pro', monospace;
   text-align : center;
@@ -16,7 +17,7 @@ const StyledLink = styled(Link)`
 `; 
 
 const StyledDiv = styled.div`
-  padding-top: 440px;
+  padding-top: 20%;
 `
 
 
@@ -63,6 +64,12 @@ function NavbarIcon() {
           <span className="line"></span>
         </div>
         </Burger>
+        <Grid
+  container
+  direction="row"
+  justifyContent="center"
+  alignItems="center"
+>
         <StyledDiv>
        
                                   <StyledLink onClick={()=>setClicked(false)} to="abstract"  smooth={true} duration={800}><p>Abstract</p></StyledLink>
@@ -71,6 +78,7 @@ function NavbarIcon() {
 
 
         </StyledDiv>
+        </Grid>
 
         </div>
         </Fade>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss';
 import SectionHeader from '../SectionHeader/index';
-import Img1 from '../../img/laura.JPEG';
+import Img1 from '../../img/agora.jpg';
 import AboutCard from '../aboutCard/aboutCard';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
@@ -9,8 +9,14 @@ import { Container } from '@mui/material';
 
 
 
+
 import styled from 'styled-components';
 import { Paper } from '@mui/material';
+const StyledImg = styled.img`
+    width : 18px;
+    float : right;
+    heigth:auto;
+`
 
 const StyledDiv = styled.div`
 bottom:0;
@@ -27,7 +33,15 @@ const StyledVideo = styled.video`
 const StyledText = styled.p`
   color : white;
   float : right;
+  font-size:12px;
   padding-right:10%;
+`
+
+const StyledA = styled.a`
+    text-decoration : none;
+    color : white;
+    font-size : 16px;
+
 `
 const Footer = () =>{
     return(
@@ -63,7 +77,8 @@ Welcome</p>
 
         </section>
         <StyledDiv>
-           <StyledText>Designed by Agora3dStudio</StyledText>
+           <StyledText>Designed by Laura Heiss & <StyledA href="https://agora3dstudio.com">Agora3dStudio           <StyledImg src={Img1} />
+</StyledA></StyledText>
        </StyledDiv>
 
         </>

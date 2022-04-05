@@ -73,7 +73,7 @@ alignItems="center"
 >
       <StyledText>
         <p>
-Every year, around 8,000 people in Germany get brain cancer, of which 40% are diagnosed as Glioblastoma, the most aggressive type of brain cancer which cannot fully cured yet.</p>
+Every year, around 8,000 people in Germany get brain cancer, of which 40% are diagnosed as Glioblastoma, the most aggressive type of brain cancer which cannot be fully cured yet.</p>
 <p>
 The artist's father who was diagnosed with this particular type of brain cancer, was able to extend his first given life expectancy by around one and a half years. Besides changing his diet to keto and receiving chemotherapy, one of the major reasons for this to be possible was the PDT treatment (Photodynamic Therapy), an experimental treatment, he received, carried out by Professor Kreth, leading head of the neurological department at Grosshadern in Munich, Germany. Kreth was the first and only one to apply this treatment in his department, in one of the few hospitals in Germany where the PDT is applied. Life expectancy of PDT patients was increased by approximately ten months after surgery with some patients in the PDT group remaining progression-free in the five-year follow-up. While the three-year survival rate after conventional resection was only 21%, it could be increased up to 65% in the PDT group.
 </p>
