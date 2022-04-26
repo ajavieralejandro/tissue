@@ -4,8 +4,7 @@ import ImageListItem from '@mui/material/ImageListItem';
 import styled from 'styled-components';
 import Slider from '../Slider/slider';
 import SectionHeader from '../SectionHeader';
-
-
+import {VideoGallery2} from '../VideoGallery2/VideoGallery2';
 import Img1 from '../../img/gallery/1.PNG';
 import Img2 from '../../img/gallery/2.png';
 import Img3 from '../../img/gallery/3.JPEG';
@@ -163,7 +162,7 @@ export default function WovenImageList() {
     <Container>
    
   
-    <Slider components={[ItemSlider,ItemSlider2]} />
+    <Slider components={[ItemSlider,ItemSlider2,VideoGallery2]} />
       </Container>
 
 

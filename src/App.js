@@ -82,7 +82,6 @@ const Home = () => {
         </Container>
         <Parallax />  
         <Gallery />
-        <VideoGallery  />
 
   
         <Footer />
