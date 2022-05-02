@@ -9,7 +9,7 @@ import { Container } from '@mui/material';
 import Gallery from './components/Gallery/gallery';
 import  {VideoGallery} from './components/VideoGallery/videoGallery';
 import Grid from '@mui/material/Grid';
-
+import ContactForm from './components/contactForm/contactFom';
 
 import React, { useState } from "react";
 import { useEffect } from "react";
@@ -82,7 +82,6 @@ const Home = () => {
         </Container>
         <Parallax />  
         <Gallery />
-
   
         <Footer />
       </div>
