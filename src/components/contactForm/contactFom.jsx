@@ -6,8 +6,21 @@
     import FilledInput from '@mui/material/FilledInput';
     import { Button } from '@mui/material';
     import SendIcon from '@mui/icons-material/Send';
+    import emailjs from '@emailjs/browser';
 
 
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_bcrbr5t', 'template_lq16jl9', e.target, 'A_TxFi2nrM5sWPFIM')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset();
+      };
+    
 
 
     const StyledTextField = styled(TextField)`
@@ -72,30 +85,33 @@
                     justifyContent="center"
                     alignItems="center"
                     >
+                                        <form onSubmit={e=>sendEmail(e)}>
+
                                         <StyledText>Lets' keep in contact</StyledText>
 
                     <Wrapper>
-                        <Input color="info"  variant="filled" id="filled-basic"  label="name" />
+                        <Input name="name" color="info"  variant="filled" id="filled-basic"  label="name" />
                     </Wrapper>
                     <Wrapper>
-                        <Input color="info"  variant="filled" id="filled-basic"  label="email" />
+                        <Input name="email" color="info"  variant="filled" id="filled-basic"  label="email" />
                     </Wrapper>
                     <Wrapper>
                     <MultiInput
           id="filled-textarea"
           label="Message"
           placeholder="Message"
+          name="message"
           multiline
           variant="filled"
           rows={4}
         />
                         </Wrapper>
                         <Wrapper>
-                        <StyledButton variant="contained" endIcon={<SendIcon />}>
+                        <StyledButton type="submit" variant="contained" endIcon={<SendIcon />}>
         Send Mail
       </StyledButton>
                         </Wrapper>
-                  
+                  </form>
 
 
                 </Grid>

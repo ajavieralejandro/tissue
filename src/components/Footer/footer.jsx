@@ -88,7 +88,7 @@ Laura Heiss was born in Germany and has been living in different countries throu
 
         </section>
         <StyledDiv>
-           <StyledText>Designed by Laura Heiss & <StyledA href="https://agora3dstudio.com">Agora3dStudio           <StyledImg src={Img1} />
+           <StyledText>Designed by Laura Heiss & <StyledA href="https://agora3dstudio.com">Agora3dStudio      
 </StyledA></StyledText>
        </StyledDiv>
 
