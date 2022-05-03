@@ -71,10 +71,12 @@ justifyContent="center"
 alignItems="center"
 >
       <StyledText>
-        <p>
-Every year, around 8,000 people in Germany get brain cancer, of which 40% are diagnosed as Glioblastoma, the most aggressive type of brain cancer which cannot be fully cured yet.</p>
+        <p> 
+Every year, around 8,000 people in Germany get diagnosed with brain cancer. 40% of these diagnoses are Glioblastoma, the most aggressive type of brain cancer which cannot be fully cured yet.</p>
 <p>
-The artist's father who was diagnosed with this particular type of brain cancer, was able to extend his first given life expectancy by around one and a half years. Besides changing his diet to keto and receiving chemotherapy, one of the major reasons for this to be possible was the PDT treatment (Photodynamic Therapy), an experimental treatment, he received, carried out by Professor Kreth, leading head of the neurological department at Grosshadern in Munich, Germany. Kreth was the first and only one to apply this treatment in his department, in one of the few hospitals in Germany where the PDT is applied. Life expectancy of PDT patients was increased by approximately ten months after surgery with some patients in the PDT group remaining progression-free in the five-year follow-up. While the three-year survival rate after conventional resection was only 21%, it could be increased up to 65% in the PDT group.
+
+ 
+The artist's father who was diagnosed with this particular type of brain cancer, was able to extend his first given life expectancy by around one and a half years. Besides changing his diet to keto and receiving chemotherapy, one of the major reasons for his extended prognosis was PDT treatment (Photodynamic Therapy). PDT is a two stage treatment that combines light energy with a drug (photosensitizer) designed to destroy cancerous cells after light activation. According to Prof. Kreth (leading head of the neurological department at Grosshadern in Munich, Germany) life expectancy of PDT patients was increased by around ten months after surgery with some patients in the PDT group remaining progression-free in the five-year follow-up. His technique was first of its kind to be applied in his department with the already scarcely available neurological hospitals in Germany. Furthermore, it was found that the three-year survival rate after conventional resection was only 21%, it could be increased up to 65% in the PDT group.
 </p>
       </StyledText>
       </Grid>
@@ -107,10 +109,7 @@ alignItems="center"
 >
       <StyledText>
       <p>
-Still in the experimental phase, PDT could be a promising alternative to conventional treatments.
-
-This work is also inspired by this treatment and its application while playing with reflection, colors, and liquids.
-
+      Even though PDT is still considered an experimental treatment, it envisions a possible path different from conventional treatments. This work is also inspired by this treatment and its application while playing with reflection, colors, and liquids.
 </p>
 <p>
 
@@ -120,7 +119,7 @@ How can we give pain a new expression?</p>
 
 <p>How can art contribute to our resilience and healing?</p>
 
-<p>What is art? What science?
+<p>What is art? What is science?
 </p>
 
  

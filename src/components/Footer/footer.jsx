@@ -61,16 +61,16 @@ const Footer = () =>{
                     <Grid item sm={6} xs={12}>
             
                     <p className="parallax-text">
-            “Tissue” has been the expression of my constant experimentation and exploration of the mystery, of the unknown, of what connects life and death in an endless chiasmus, manifesting in a multi-channel video installation.
-            
-            Through metaphorical images, I mutated my experience of pain in the face of loss. From the very beginning of this process, I had the idea of ​​using different materials such as my father's CT scans as an analogy to the abstract memories that I had left of him from my childhood and became, over time, more and more subtle.
-            
-            I carry out this work as if I were on a journey through a meditation process, a process in which I enable myself over and over again to keep mutating and un-covering the pain in always new transforming expressions. Art embraces pain and transforms it. ”Tissue”, my first installation, is a healing journey.
+           
+“Tissue” has been the expression of my constant experimentation and exploration of the mystery, of the unknown, of what connects life and death in an endless chiasmus, manifesting in a multi-channel video installation.
             </p>
             <p className="parallax-text">
-            Laura Heiss was born in Germany and has been living in different countries throughout the world always with the same passion: NGOs and their identities, stories. “Tissue” is her first installation. She lives between Ibiza and Buenos Aires.
-            
-            Welcome</p>
+
+ 
+            Through metaphorical images, I mutated my experience of pain in the face of loss. From the very beginning of this process, I had the idea of ​​using different materials such as my father's CT scans as an analogy to the abstract memories that I had left of him from my childhood. These memories became, over time, more and more subtle.</p>
+            <p className="parallax-text">I carry out this work as if I were on a journey through a meditation process, a process in which I enable myself over and over again to continue mutating and discovering pain in always new transforming expressions. Art embraces pain and transforms it. ”Tissue”, my first installation, is a healing journey. </p>
+            <p className="parallax-text">
+Laura Heiss was born in Germany and has been living in different countries throughout the world always with the same passion: NGOs and their identities, stories. “Tissue” is her first installation. While studying documentary filmmaking at the Fundacion de Cine in Buenos Aires, “Tissue” came into life. She lives between Ibiza and Buenos Aires.</p>
                     </Grid>
                  
                     <Grid item sm={6} xs={12}>

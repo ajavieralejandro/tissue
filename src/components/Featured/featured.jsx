@@ -44,8 +44,11 @@ const Featured = () =>{
                 </Grid>
                 <Grid item sm={12} md={7}>
                     <div className="center">
-                    <p id="headline">"Tissue" unfolds as a multi-channel video installation that interprets and redefines a singular type of brain cancer into a visual and emotional journey.
-                   “Tissue” is the intersection between art and science aiming to express the mystery, the unknown, the ineffable, what is usually totally out of our human control.</p>
+                    <p id="headline">"Tissue" unfolds as a multi-channel video installation that interprets and redefines Glioblastoma brain cancer into a visual and emotional journey.
+</p>
+                    <p id="headline">“Tissue” is the intersection between art and science aiming to express the mystery, the unknown, the ineffable, what is usually totally out of our human control.
+</p>
+
                     </div>                
 
                 </Grid>
