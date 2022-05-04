@@ -87,7 +87,7 @@
                     >
                                         <form onSubmit={e=>sendEmail(e)}>
 
-                                        <StyledText>Lets' keep in contact</StyledText>
+                                        <StyledText>Contact Me!</StyledText>
 
                     <Wrapper>
                         <Input name="name" color="info"  variant="filled" id="filled-basic"  label="name" />

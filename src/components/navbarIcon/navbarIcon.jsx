@@ -8,7 +8,7 @@ import { Button } from '@mui/material';
 import { Grid } from '@mui/material';
 const StyledLink = styled(Link)`
   font-family: 'Source Code Pro', monospace;
-  text-align : center;
+  text-align : center;    
   color : white;
   font-size : 22px;
   &:hover{

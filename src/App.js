@@ -10,6 +10,7 @@ import Gallery from './components/Gallery/gallery';
 import  {VideoGallery} from './components/VideoGallery/videoGallery';
 import Grid from '@mui/material/Grid';
 import ContactForm from './components/contactForm/contactFom';
+import ModalFLyer from './components/ModalFlyer/modalFlyer';
 
 import React, { useState } from "react";
 import { useEffect } from "react";
@@ -76,6 +77,7 @@ const Home = () => {
         <div className="main-container" id='main-container'>
           <Navbar />
         <VideoC />
+        <ModalFLyer />
         <Container>
 
         <Featured />
