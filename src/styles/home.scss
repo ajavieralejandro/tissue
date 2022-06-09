@@ -35,7 +35,25 @@ section {
   bottom: 0;
   right: 0;
   background-color: black;
+ 
   z-index: 1;
+}
+
+.parallax-loader{
+  width: 100%;
+  height: auto;
+  background-image: url("https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/474c370e-2a59-42cf-442f-11b7b2227300/public");
+  
+  /* Set a specific height */
+  min-height: 500px; 
+  width: 100%;
+  height: auto;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .loader-wrapper {

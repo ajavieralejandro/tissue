@@ -10,7 +10,8 @@ import Gallery from './components/Gallery/gallery';
 import  {VideoGallery} from './components/VideoGallery/videoGallery';
 import Grid from '@mui/material/Grid';
 import ContactForm from './components/contactForm/contactFom';
-import ModalFLyer from './components/ModalFlyer/modalFlyer';
+import Gallery2 from './components/Gallery2/Gallery2';
+import About from './components/About/about';
 
 import React, { useState } from "react";
 import { useEffect } from "react";
@@ -70,22 +71,32 @@ const Home = () => {
       <CustomCursor />
       {preloader ? (
         <div className="loader-wrapper absolute">
-          <h1>Laura Heiss</h1>
+
+<h1>Laura Heiss</h1>
           <h2>Tissue</h2>
+                    <div className="parallax-loader"></div>
+
      </div>
       ) : (
         <div className="main-container" id='main-container'>
           <Navbar />
         <VideoC />
-        <ModalFLyer />
+
         <Container>
 
         <Featured />
+        
         </Container>
-        <Parallax />  
+
+        <Parallax /> 
+        <Container style={{paddingTop:40}}>
+        </Container> 
+
         <Gallery />
-  
+        <About />
+        <Gallery2 />
         <Footer />
+
       </div>
       )}
     </>

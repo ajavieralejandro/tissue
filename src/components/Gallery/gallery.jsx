@@ -12,6 +12,7 @@ import Img4 from '../../img/gallery/4.JPEG';
 import Img5 from '../../img/gallery/5.png';
 import Grid from '@mui/material/Grid';
 import { Container } from '@mui/material';
+
 import './style.scss';
 
 
@@ -19,7 +20,6 @@ const Wrapper = styled.div`
   width: 100%;
   height: auto;
   background :#282c34;
-  font-size : 2rem;
   
 
 
@@ -50,7 +50,11 @@ const StyledText = styled.div`
 
 color : white;
 font-family : 'Simpletix';
-font-size:1.2rem;
+font-size :1.3rem;
+
+@media only screen and (max-width: 728px) {
+  font-size:0.8rem;
+}
 justify-content: center;
 margin : 10%;
 padding-top:5%;
@@ -71,7 +75,7 @@ justifyContent="center"
 alignItems="center"
 >
       <StyledText>
-        <p> 
+        <p > 
 Every year, around 8,000 people in Germany get diagnosed with brain cancer. 40% of these diagnoses are Glioblastoma, the most aggressive type of brain cancer which cannot be fully cured yet.</p>
 <p>
 

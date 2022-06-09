@@ -73,12 +73,12 @@ export default function CustomizedDialogs({open,setOpen}) {
         open={open}
         PaperProps={{
           style: {
-            backgroundColor: 'transparent',
-            boxShadow: 'none',
+            backgroundColor: 'white',
           },
         }}
       >
         <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
+          Comming Soon | Buenos Aires Argentina
         </BootstrapDialogTitle>
         <DialogContent dividers>
           <div>
