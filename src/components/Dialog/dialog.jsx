@@ -55,7 +55,7 @@ BootstrapDialogTitle.propTypes = {
   onClose: PropTypes.func.isRequired,
 };
 
-export default function CustomizedDialogs({open,setOpen}) {
+export default function CustomizedDialogs({open,setOpen,image}) {
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -68,21 +68,21 @@ export default function CustomizedDialogs({open,setOpen}) {
     <div>
      
       <BootstrapDialog
+      fullScreen
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
         open={open}
         PaperProps={{
           style: {
-            backgroundColor: 'white',
+            backgroundColor: 'transparent',
           },
         }}
       >
         <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
-          Comming Soon | Buenos Aires Argentina
         </BootstrapDialogTitle>
         <DialogContent dividers>
           <div>
-            <StyledImg src="https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/084e46d7-f8aa-4904-1d8f-b923e3bb8d00/public" />
+            <StyledImg src={image} />
           </div>
         </DialogContent>
       

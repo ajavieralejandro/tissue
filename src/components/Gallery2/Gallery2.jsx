@@ -1,11 +1,13 @@
 import * as React from 'react';
+import { useState } from 'react';
 import Box from '@mui/material/Box';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import Grid from '@mui/material/Grid'
 import SectionHeader from '../SectionHeader';
 import styled from 'styled-components'
-
+import { Container } from '@mui/material';
+import ModalFLyer from '../ModalFlyer/modalFlyer';
 const StyledText = styled.p`
 text-transform: uppercase;
 font-weight: 600;
@@ -17,18 +19,29 @@ font-family: 'Syncopate', sans-serif;
 color: white;
 text-align : center;`
 
+
+
 export default function MasonryImageList() {
+  const [click, setclick] = useState(false)
+  const [image,setImage] = useState("");
+
+const handleClick = (image)=>{
+  setImage(image);
+  setclick(true);
+}
+
+
+
   return (
     <>
                   <StyledText >Muestra Samana | Buenos Aires</StyledText>
-
     <Grid
     container
     direction="row"
     justifyContent="center"
     alignItems="center"
   >
-    <Box sx={{ minWidth: 600, minHeight: 400}}>
+    <Box sx={{ minWidth: 200, minHeight: 200}}>
       <ImageList variant="masonry" cols={4} gap={10}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
@@ -37,10 +50,16 @@ export default function MasonryImageList() {
               srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
               alt={item.title}
               loading="lazy"
+              onClick={()=>handleClick(item.img)}
+              
             />
+            
+          
           </ImageListItem>
         ))}
       </ImageList>
+      <ModalFLyer open={click} setOpen={setclick} image={image} />
+
     </Box>
     </Grid>
     </>

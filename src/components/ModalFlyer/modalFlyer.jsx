@@ -72,27 +72,13 @@ const StyledIconButton = styled(IconButton)`
 
 
 
-export default function ModalFLyer() {
-  const endTime = Date.now();
- 
-
-
-    const [open, setOpen] = useState(false);
-
-    const { time, start, pause, reset, status } = useTimer({
-      autostart: true,
-      endTime: 3,
-      initialTime: 1,
-      onTimeOver: () => {
-        setOpen(true);
-      },
-    });
-  
+export default function ModalFLyer({open,image,setOpen}) {
+    
     
     
     return (
         <>
-        <Dialog open={open} setOpen={setOpen} />
+        <Dialog open={open} image={image} setOpen={setOpen} />
        
         </>
     )
