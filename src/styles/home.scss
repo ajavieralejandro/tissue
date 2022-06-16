@@ -51,9 +51,18 @@ section {
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+
+
+    @media screen and (max-width: 768px) {
+      .parallax-loader {
+        background-attachment: inherit;
+      }
+    }
+  
+
 }
 
 .loader-wrapper {
@@ -69,6 +78,12 @@ section {
     text-transform: uppercase;
     font-family: "Bai Jamjuree", sans-serif;
     font-weight: 600;
+
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+
+    }
+  
   }
   h2 {
     font-size: 1.5vw;
@@ -77,5 +92,9 @@ section {
     font-family: "Bai Jamjuree", sans-serif;
     font-style: italic;
     margin-top: 10px;
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+
+    }
   }
 }

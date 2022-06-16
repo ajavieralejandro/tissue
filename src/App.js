@@ -12,6 +12,9 @@ import Grid from '@mui/material/Grid';
 import ContactForm from './components/contactForm/contactFom';
 import Gallery2 from './components/Gallery2/Gallery2';
 import About from './components/About/about';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material';
+
 
 import React, { useState } from "react";
 import { useEffect } from "react";
@@ -26,8 +29,12 @@ import './styles/reset.css';
 import './App.css';
 
 const Home = () => {
+  const theme = useTheme();
   const ref = useRef(null);
   const [preloader, setPreload] = useState(true);
+  const cursor = useMediaQuery(theme.breakpoints.up('md'));
+
+
 
 
 
@@ -68,7 +75,8 @@ const Home = () => {
 
   return (
     <>
-      <CustomCursor />
+    
+    {cursor?<CustomCursor />:null}
       {preloader ? (
         <div className="loader-wrapper absolute">
 

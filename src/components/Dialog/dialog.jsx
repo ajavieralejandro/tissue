@@ -11,6 +11,11 @@ import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
 import Img from 'react-image';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { Fullscreen } from '@mui/icons-material';
+import { useTheme } from '@mui/material/styles';
+
+
 
 const StyledImg = styled2.img`
   width:100%;
@@ -28,6 +33,7 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
 
 const BootstrapDialogTitle = (props) => {
   const { children, onClose, ...other } = props;
+  
 
   return (
     <DialogTitle sx={{ m: 0, p: 2 }} {...other}>
@@ -56,6 +62,10 @@ BootstrapDialogTitle.propTypes = {
 };
 
 export default function CustomizedDialogs({open,setOpen,image}) {
+  const theme = useTheme();
+
+  const fullScreen = useMediaQuery(theme.breakpoints.up('md'));
+
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -68,7 +78,7 @@ export default function CustomizedDialogs({open,setOpen,image}) {
     <div>
      
       <BootstrapDialog
-      fullScreen
+      fullScreen={fullScreen}
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
         open={open}

@@ -8,6 +8,8 @@
         import Box from '@mui/material/Box';
         import { Container } from '@mui/material';
         import ContactForm from '../contactForm/contactFom';
+        import { useMediaQuery } from '@material-ui/core';
+        import { useTheme } from '@material-ui/core';
         
         
         
@@ -45,10 +47,13 @@
         
         `
         const About = () =>{
+            const theme = useTheme();
+            const cursor = useMediaQuery(theme.breakpoints.up('md'));
+
             return(
                 <>
                         <SectionHeader className="section-header" title="about me" />
-                        <div className="parallax2">
+                        <div className={cursor?"parallax2":"movparallax"}>
                        
               
          

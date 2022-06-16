@@ -34,7 +34,7 @@ const handleClick = (image)=>{
 
   return (
     <>
-                  <StyledText >Muestra Samana | Buenos Aires</StyledText>
+                  <StyledText >Samana exhibition | Buenos Aires</StyledText>
     <Grid
     container
     direction="row"
