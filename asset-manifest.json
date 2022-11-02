@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7ca93bb8.css",
-    "main.js": "/static/js/main.307e2964.js",
+    "main.js": "/static/js/main.671af2b8.js",
     "static/js/787.2c4fddbf.chunk.js": "/static/js/787.2c4fddbf.chunk.js",
     "static/media/laura.JPEG": "/static/media/laura.f6fc77c5a4daa6466318.JPEG",
     "static/media/3.JPEG": "/static/media/3.402aa7bfd3993bd27ad7.JPEG",
@@ -10,18 +10,18 @@
     "static/media/5.png": "/static/media/5.f007bd8b5a79aab49226.png",
     "static/media/1.png": "/static/media/1.f7eeae83d298bdefdf26.png",
     "static/media/1.PNG": "/static/media/1.8f2ee99686d62915e0a3.PNG",
+    "static/media/brota2.jpeg": "/static/media/brota2.370ef4f759f79fa47152.jpeg",
     "static/media/laura1.jpeg": "/static/media/laura1.7467cde40b52adc8df89.jpeg",
-    "static/media/brota (1).jpeg": "/static/media/brota (1).6b3194076238725c7a64.jpeg",
     "static/media/agora.jpg": "/static/media/agora.346fcf7740f3b25f011f.jpg",
     "static/media/simpletix.otf": "/static/media/simpletix.74e3bf274b780e3b0c7b.otf",
     "static/media/minimal.otf": "/static/media/minimal.8420015aee7e2b623731.otf",
     "index.html": "/index.html",
     "main.7ca93bb8.css.map": "/static/css/main.7ca93bb8.css.map",
-    "main.307e2964.js.map": "/static/js/main.307e2964.js.map",
+    "main.671af2b8.js.map": "/static/js/main.671af2b8.js.map",
     "787.2c4fddbf.chunk.js.map": "/static/js/787.2c4fddbf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7ca93bb8.css",
-    "static/js/main.307e2964.js"
+    "static/js/main.671af2b8.js"
   ]
 }
