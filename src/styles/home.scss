@@ -1,0 +1,100 @@
+// @import url("https://fonts.googleapis.com/css?family=Oswald:300;700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@100;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@100;700&display=swap");
+
+$bg-color: #0F3D44;
+$bg-color2: #BBD0D9;
+
+
+
+body {
+  font-family: "Minimal";
+  background-color: $bg-color;
+}
+
+.main-container {
+  // clip-path: inset(100% 0% 0% 0%);
+  // backface-visibility: hidden;
+}
+
+section {
+  padding: 100px 0;
+  .section-header {
+    margin-bottom: 50px;
+  }
+}
+.absolute {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+ 
+  z-index: 1;
+}
+
+.parallax-loader{
+  width: 100%;
+  height: auto;
+  background-image: url("https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/474c370e-2a59-42cf-442f-11b7b2227300/public");
+  
+  /* Set a specific height */
+  min-height: 500px; 
+  width: 100%;
+  height: auto;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+
+    @media screen and (max-width: 768px) {
+      .parallax-loader {
+        background-attachment: inherit;
+      }
+    }
+  
+
+}
+
+.loader-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: "all 0.25s ease-in-out";
+  background-color: #191919;
+  color: #dbd8d6;
+  h1 {
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+
+    }
+  
+  }
+  h2 {
+    font-size: 1.5vw;
+
+    text-transform: uppercase;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-style: italic;
+    margin-top: 10px;
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+
+    }
+  }
+}

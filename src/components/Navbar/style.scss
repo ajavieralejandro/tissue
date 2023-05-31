@@ -1,0 +1,24 @@
+.navbar{
+    justify-content: space-between;
+    font-size: 24px;
+    position: fixed;
+    letter-spacing: 1px;
+    color : #363636;
+    background-color: transparent;
+    width: 100%;
+    height: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.icon:hover{
+
+    transform: scale(1.08); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transition-duration: 500ms;
+
+}
+
+.icon{
+    float: left;
+    padding-left: 5%;
+}

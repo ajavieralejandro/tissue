@@ -1,0 +1,33 @@
+.header-container{
+    font-family: 'Simpletix';
+
+    position : relative;
+    .header-menu{
+        position: absolute;
+        left : 0;
+        top: 100px;
+        letter-spacing: 1px;
+        color : #626262;
+        text-transform: uppercase;
+        li{
+            margin : 10px 0;
+
+        }
+        }
+        #header-text{
+            padding-top: 10%;
+            font-size: 12vh;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+            color:#B8D0D9
+        }
+        #quote{
+            padding-top: 4%;
+            font-size: 4vh;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 100;
+            color:#B8D0D9
+        }
+}

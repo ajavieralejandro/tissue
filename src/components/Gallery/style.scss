@@ -1,0 +1,41 @@
+.img{
+    width:100%;
+    height:100%;
+    background-image: url("https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/45711dfa-7bcc-4e9f-711f-555fc8926200/public");
+    min-height: 600px; 
+    background-position: center center;
+    @media (max-width: 800px) {
+        
+        min-height:300px;
+    
+  }
+
+
+
+
+
+}
+.responsiveText{
+    font-size:15px;
+
+
+}
+.img2{
+    width:100%;
+    height:100%;
+    
+    background-image: url("https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/07051094-3480-4541-67d8-3a9fdb0b0800/public");
+    background-position: center center;
+    background-size: cover;
+    @media (max-width: 800px) {
+        
+            min-height:300px;
+        
+      }
+    
+
+
+
+
+
+}
