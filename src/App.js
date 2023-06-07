@@ -28,6 +28,7 @@ import Menu from './components/Menu/menu';
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { useRef } from "react";
+import Card5 from './components/Cards/card5';
 //import Footer from "./components/Footer";
 import CustomCursor from "./CustomCursor";
 import Card2 from './components/Cards/card2';
@@ -177,18 +178,17 @@ const Home = () => {
         <VideoGallery />
         <SectionHeader className="section-header" title="INTI | Argentina" />
 
-        <Card4 />
-  
+        <Inti2 />
 
         <About />
         
-        <SectionHeader className="section-header" title="Exhibitions" />
-        <Card2 />
 
 
       
         <Footer />
-     
+        <SectionHeader className="section-header" title="Exhibitions" />
+
+        <Exhibitions />
       
        
       </div>

@@ -18,8 +18,8 @@ import { useTheme } from '@mui/material/styles';
 
 
 const StyledImg = styled2.img`
-  width:auto;
-  height : 100%;
+  width:100%;
+  height : auto;
   max-width: 720px;
   max-height: 960px;
 

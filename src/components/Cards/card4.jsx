@@ -5,7 +5,8 @@ import Card3 from './card3';
 import Inti2 from '../Inti/inti2';
 import Vimeo from '@u-wave/react-vimeo';
 import styled from 'styled-components';
-
+import { Container } from '@mui/material';
+import Card5 from './card5'
 const StyledText = styled.p`
 text-transform: lowercase;
 font-family: 'Minimal';
@@ -24,7 +25,8 @@ export default  ({image}) =>{
         <>
            
  <section className="text-white body-font " >
-  
+
+
   <div className="container px-5 py-12 mx-auto flex flex-wrap">
     
     <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
@@ -36,8 +38,10 @@ Fluorescence is widely used in microscopy and an important tool for observing th
       <div className="flex flex-col mb-10 lg:items-start items-center">
      
         <div className="flex-grow">
-    
-<Vimeo
+      
+        <div class=" flex items-center justify-center">
+
+  <Vimeo
   video="https://vimeo.com/817115216"
   autoplay={false}
   loop
@@ -45,7 +49,8 @@ Fluorescence is widely used in microscopy and an important tool for observing th
   showPortrait
   background={true}
   controls={false}
-/>
+/></div>
+
         </div>
       </div>
       <div className="flex flex-col  lg:items-start items-center">
@@ -61,7 +66,9 @@ Fluorescence microscopy also allows for time-lapse imaging of living cells or ti
    
     </div>
   </div>
+
 </section>
+
         </>
     )
 }

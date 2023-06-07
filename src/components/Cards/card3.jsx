@@ -6,6 +6,11 @@ import Masonry from '@mui/lab/Masonry';
 import { styled } from '@mui/material/styles';
 import { ImageList,ImageListItem } from '@mui/material';
 import { useState } from 'react';
+import ModalFLyer from '../ModalFlyer/modalFlyer';
+import { click } from '@testing-library/user-event/dist/click';
+
+
+
 
 const Label = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -19,11 +24,16 @@ const Label = styled(Paper)(({ theme }) => ({
 
 export default function ImageMasonry() {
   const [image,setImage] = useState("https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/d7faaf42-4749-4403-66ec-ae2238196e00/public");
+  const [click,setClick] = useState(false);
+
+  const handleClick = (img) =>{
+    setImage(img);
+    setClick(true);
+
+  }
   return (
     <>
     <div>
-    <img           style={{ width: "600px", height: "400px" }}
- className="w-full py-1.5" src={image} />
 
     </div>
     <div>
@@ -31,7 +41,7 @@ export default function ImageMasonry() {
     {itemData.map((item) => (
       <ImageListItem key={item.img}>
         <img
-          onClick={()=>setImage(item.img)}
+          onClick={()=>handleClick(item.img)}
           src={`${item.img}?w=248&fit=crop&auto=format`}
           srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
           alt={item.title}
@@ -46,6 +56,8 @@ export default function ImageMasonry() {
       </ImageListItem>
     ))}
   </ImageList>
+  <ModalFLyer open={click} setOpen={setClick} image={image} />
+
   </div>
   </>
   );
