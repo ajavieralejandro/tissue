@@ -25,6 +25,7 @@ export default function MediaCard() {
     <Grid item sm={12} >
 
     <StyledImg src={Img1} />
+    <StyledImg src="https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/bf75bba4-64e5-47bc-b3b1-ee68c9c45e00/public" />
 
     </Grid>
     <Grid item sm={12}>

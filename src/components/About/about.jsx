@@ -65,7 +65,7 @@
             return(
                 <>
                         <SectionHeader className="section-header" title="about me" />
-                        <div className={cursor?"parallax2":"movparallax"}>
+                        <div className="parallax2">
                        
               
          

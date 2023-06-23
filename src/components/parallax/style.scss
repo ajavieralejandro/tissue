@@ -21,17 +21,15 @@
 
 
 .mparallax{
-  background-image: url("https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/dd1bf274-33b2-408d-cf48-99d36321f700/public");
+  background-image: url("https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/8e12866f-b34d-4ec7-888a-80de06389700/public");
   
   
-  /* Set a specific height */
   width: 100%;
-  min-height: 600px;
+  min-height: 200px;
   /* Create the parallax scrolling effect */
-  background-position: center center;
   background-attachment: fixed;
-
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size:contain;
+  background-size:cover;
 }
   

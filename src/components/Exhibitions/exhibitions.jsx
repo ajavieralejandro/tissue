@@ -35,16 +35,15 @@ export default  () =>{
 
 
        :null}
-       <div className="mx-2">
-      <Container>
+              </Grid>
+
+       <div>
       {cont==1?<CasaSamana setCont={setCont}/>:null}
       {cont==2?<Brota setCont={setCont} />:null}
       {cont==3?<EastVillage setCont={setCont} />:null}
 
-      </Container>
       </div>
 
-       </Grid>
         </>
     )
 }

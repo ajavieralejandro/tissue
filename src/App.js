@@ -32,6 +32,8 @@ import Card5 from './components/Cards/card5';
 //import Footer from "./components/Footer";
 import CustomCursor from "./CustomCursor";
 import Card2 from './components/Cards/card2';
+import VideoSection from './components/VideosSection/videosSections';
+import YoutubeVideo from './components/YoutubeVideo/youtubeVideo';
 
 import useLocoScroll from "./hooks/useLocoScroll";
 import "./styles/home.scss";
@@ -172,13 +174,15 @@ const Home = () => {
 
         <Container>
         <Gallery />
+        <YoutubeVideo embedId="a0R8Rdao1Do" />
 
        
         </Container>
-        <VideoGallery />
         <SectionHeader className="section-header" title="INTI | Argentina" />
 
         <Inti2 />
+
+        
 
         <About />
         
@@ -186,6 +190,8 @@ const Home = () => {
 
       
         <Footer />
+        <VideoGallery />
+
         <SectionHeader className="section-header" title="Exhibitions" />
 
         <Exhibitions />
