@@ -176,11 +176,10 @@ const Home = () => {
         <Gallery />
         <YoutubeVideo embedId="a0R8Rdao1Do" />
 
-       
-        </Container>
         <SectionHeader className="section-header" title="INTI | Argentina" />
 
         <Inti2 />
+        </Container>
 
         
 

@@ -26,7 +26,7 @@ padding-right: 2%;
 `
 export default function Inti2({itemData}) {
   return (
-      <div className='pb-12 mx-auto'>
+
           <Grid container>
             <Grid item xs={12} md={6}>
             <div className="grid h-full place-items-center ">
@@ -40,7 +40,7 @@ Fluorescence is widely used in microscopy and an important tool for observing th
 
             </Grid>
             <Grid item xs={12} md={6}>
-            <div className="grid h-screen place-items-center">
+            <div className="grid h-full place-items-center">
             <Vimeo
   video="https://vimeo.com/817115216"
   autoplay={false}
@@ -60,7 +60,7 @@ Fluorescence microscopy also allows for time-lapse imaging of living cells or ti
             </Grid>     
       
        </Grid>
-       </div>
+
        
     );
 }
