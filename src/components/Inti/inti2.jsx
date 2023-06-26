@@ -8,6 +8,9 @@ import styled from 'styled-components';
 import Vimeo from '@u-wave/react-vimeo';
 import Hero2 from '../Tailwinds/hero2';
 import Card4 from '../Cards/card4';
+import { Box } from '@mui/material';
+import ReactPlayer from "react-player"
+
 const StyledText = styled.div`
 
 color : white;
@@ -27,7 +30,13 @@ padding-right: 2%;
 export default function Inti2({itemData}) {
   return (
 
-          <Grid container>
+
+<Grid
+  container
+  direction="row"
+  justifyContent="center"
+  alignItems="center"
+>
             <Grid item xs={12} md={6}>
             <div className="grid h-full place-items-center ">
 
@@ -40,23 +49,20 @@ Fluorescence is widely used in microscopy and an important tool for observing th
 
             </Grid>
             <Grid item xs={12} md={6}>
-            <div className="grid h-full place-items-center">
-            <Vimeo
+            <div class="grid h-screen place-items-center">
+<Vimeo
   video="https://vimeo.com/817115216"
-  autoplay={false}
-  loop
-  muted={false}
-  showPortrait
-  background={true}
-  controls={false}
+  controls
+  height={250}
+
 />
-<StyledText className="leading-relaxed text-sm">
+
+<StyledText className=" text-sm">
 Fluorescence microscopy also allows for time-lapse imaging of living cells or tissues. Hence, the proteins of interest can be tagged with genetically encoded fluorescent molecules such as GFP (green fluorescent protein). Molecules of interest can also be labeled using reversibly binding synthetic dyes (eg fura-2) or genetically modified naturally occurring proteins (eg GFP derivatives).
 
 </StyledText>
+</div>
 
-
-                </div>
             </Grid>     
       
        </Grid>

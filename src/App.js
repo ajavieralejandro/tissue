@@ -157,7 +157,7 @@ const Home = () => {
 
      </div>
       ) : (
-        <div className="main-container scroll-smooth" id='main-container'>
+        <div className="main-container scroll-smooth h-screen w-screen" id='main-container'>
         
              <Navbar />
 
