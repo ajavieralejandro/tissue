@@ -15,9 +15,12 @@ function Parallax() {
     return (
         <>
         
-        <div className={cursor?"parallax":"mparallax"}>
-            
-        </div>
+        <div
+  class="mx-auto h-80 w-screen  bg-cover bg-fixed bg-center bg-no-repeat shadow-lg"
+  style={{ 
+    backgroundImage: `url("https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/dd1bf274-33b2-408d-cf48-99d36321f700/public")`
+  }}>
+    </div>
 
         </>
     )

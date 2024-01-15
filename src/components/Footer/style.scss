@@ -34,14 +34,7 @@
     background-image: url('./../../img/laura.JPEG');
   
   
-    /* Set a specific height */
-    width: 100%;
-    min-height: 400px;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size:cover;
+   
  /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
 @media only screen and (max-device-width: 800px) {
 

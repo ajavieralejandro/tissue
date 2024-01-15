@@ -16,6 +16,7 @@ import Slider from "react-slick";
 import { VideoGallery } from '../VideoGallery/videoGallery';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Card3d from '../3dCard/3dcard';
 
 import Fade from '@mui/material/Fade';
 
@@ -172,10 +173,9 @@ export default function WovenImageList() {
     <section id="abstract">
     <Div >
               <SectionHeader title="Abstract..." />
-
     <Container>
-   
     <Slider {...settings}>
+  
       <div>
         <ItemSlider />
       </div>

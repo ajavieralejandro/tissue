@@ -34,13 +34,16 @@ import CustomCursor from "./CustomCursor";
 import Card2 from './components/Cards/card2';
 import VideoSection from './components/VideosSection/videosSections';
 import YoutubeVideo from './components/YoutubeVideo/youtubeVideo';
-
+import Timeline from './components/Timeline/timeline';
+import Card3d from './components/3dCard/3dcard';
 import useLocoScroll from "./hooks/useLocoScroll";
 import "./styles/home.scss";
 import './styles/reset.css';
 import './App.css';
 
-const url = "https://storage.googleapis.com/ucloud-v3/ccab50f18fb14c91ccca300a.stl"
+const url = "https://storage.googleapis.com/ucloud-v3/ccab50f18fb14c91ccca300a.stl";
+
+
 const itemData = [
   {
     img: 'https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/474c370e-2a59-42cf-442f-11b7b2227300/public',
@@ -92,14 +95,10 @@ const itemData = [
   },
 ];
 
-const style = {
-    top: 0,
-    left: 0,
-    width: '100vw',
-    height: '100vh',
-}
+
 
 const Home = () => {
+ 
   const theme = useTheme();
   const ref = useRef(null);
   const [preloader, setPreload] = useState(true);
@@ -166,7 +165,7 @@ const Home = () => {
         <Container>
 
         <Featured />
-        
+
         </Container>
 
       
@@ -185,15 +184,13 @@ const Home = () => {
 
         <About />
         
-
-
+        
       
         <Footer />
-        <VideoGallery />
 
-        <SectionHeader className="section-header" title="Exhibitions" />
+        <Timeline />
 
-        <Exhibitions />
+
       
        
       </div>

@@ -7,7 +7,7 @@ const StyledDiv = styled.div`
 `
 
 export const VideoGallery2 = () => {
-  const videoIdOrSignedUrl = "6e4707e8f353a9cf823d5ae585d49564";
+  const videoIdOrSignedUrl = "https://vimeo.com/817115216";
   return (
     
       <Stream controls src={videoIdOrSignedUrl} />

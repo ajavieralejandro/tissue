@@ -65,12 +65,12 @@
             return(
                 <>
                         <SectionHeader className="section-header" title="about me" />
-                        <div className="parallax2">
-                       
-              
-         
-                    
-              </div>
+                        <div
+  class="mx-auto h-80 w-screen  bg-cover bg-fixed bg-center bg-no-repeat shadow-lg"
+  style={{ 
+    backgroundImage: `url("https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/bf75bba4-64e5-47bc-b3b1-ee68c9c45e00/public")`
+  }}>
+    </div>
         
               
                

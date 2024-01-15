@@ -137,23 +137,16 @@ Not only I experimented with medical imaging including a digital microscope and 
       
      <Grid item xs={12} sm={12}>
    <Box sx={{ minWidth: 200, minHeight: 200}}>
-   <Masonry columns={{ xs: 2, md: 3 }} spacing={2}>
-
-        {itemData.map((item) => (
-          <ImageListItem key={item.img}>
-            <img
-              src={`${item.img}?w=248&fit=crop&auto=format`}
-              srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-              alt={item.title}
-              loading="lazy"
-              onClick={()=>handleClick(item.img)}
-              
-            />
+   <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+   {itemData.map((item) => (
+          
+          
+            <img               onClick={()=>handleClick(item.img)}
+ class="h-auto max-w-full rounded-lg" src={`${item.img}`} alt={item.title}></img>
             
           
-          </ImageListItem>
         ))}
-      </Masonry>
+        </div>
       <ModalFLyer open={click} setOpen={setclick} image={image} />
 
     </Box>
@@ -161,6 +154,7 @@ Not only I experimented with medical imaging including a digital microscope and 
     </Grid>
 
     </div>
+  
     </Container>
     </>
 

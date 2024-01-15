@@ -10,6 +10,7 @@ import Hero2 from '../Tailwinds/hero2';
 import Card4 from '../Cards/card4';
 import { Box } from '@mui/material';
 import ReactPlayer from "react-player"
+import YoutubeVideo from '../YoutubeVideo/youtubeVideo';
 
 const StyledText = styled.div`
 
@@ -38,33 +39,30 @@ export default function Inti2({itemData}) {
   alignItems="center"
 >
             <Grid item xs={12} md={6}>
-            <div className="grid h-full place-items-center ">
+              
+            <div className="grid h-full place-items-center p-12 	 ">
+            <h1 class="font-bebas-neue uppercase text-2xl sm:pt-12  sm:text-4xl font-black flex flex-col leading-none dark:text-white text-gray-800">
+                    Inti
+                
+                </h1>
+               
 
             <p className=" text-sm">     <StyledText>Thank you very much for opening the doors to me @intiargentina.
 Fluorescence is widely used in microscopy and an important tool for observing the distribution of specific molecules. Most molecules in cells do not fluoresce. Therefore, they have to be labeled with fluorescent molecules called fluorochromes. Molecules of interest can be labeled directly, (eg, DNA with DAPI) or they can be immunolabeled with fluorochromes that are coupled to specific antibodies. Cell fixation is usually required for immunostaining.
 </StyledText></p>
 
-            <Card3 />
             </div>
 
             </Grid>
             <Grid item xs={12} md={6}>
-            <div class="grid h-screen place-items-center">
-<Vimeo
-  video="https://vimeo.com/817115216"
-  controls
-  height={250}
-
-/>
+            <Card3 />
 
 <StyledText className=" text-sm">
 Fluorescence microscopy also allows for time-lapse imaging of living cells or tissues. Hence, the proteins of interest can be tagged with genetically encoded fluorescent molecules such as GFP (green fluorescent protein). Molecules of interest can also be labeled using reversibly binding synthetic dyes (eg fura-2) or genetically modified naturally occurring proteins (eg GFP derivatives).
 
 </StyledText>
-</div>
 
             </Grid>     
-      
        </Grid>
 
        
