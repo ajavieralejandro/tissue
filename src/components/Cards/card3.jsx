@@ -63,11 +63,7 @@ export default function ImageMasonry() {
     </a>
   </div>
 
-  <div class="img-wrapper">
-    <a  target="_blank" rel="noopener">
-      <img src="https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/0e6474d0-cd17-41cc-a7d9-f0fba0a0c500/public?w=248&fit=crop&auto=format&dpr=2" alt=""/>
-    </a>
-  </div>
+
 
   <div class="img-wrapper slower">
     <a target="_blank" rel="noopener">

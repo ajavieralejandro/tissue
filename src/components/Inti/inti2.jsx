@@ -11,7 +11,7 @@ import Card4 from '../Cards/card4';
 import { Box } from '@mui/material';
 import ReactPlayer from "react-player"
 import YoutubeVideo from '../YoutubeVideo/youtubeVideo';
-
+import { Experience } from '../Canvas/Experience';
 const StyledText = styled.div`
 
 color : white;
@@ -50,7 +50,7 @@ export default function Inti2({itemData}) {
             <p className=" text-sm">     <StyledText>Thank you very much for opening the doors to me @intiargentina.
 Fluorescence is widely used in microscopy and an important tool for observing the distribution of specific molecules. Most molecules in cells do not fluoresce. Therefore, they have to be labeled with fluorescent molecules called fluorochromes. Molecules of interest can be labeled directly, (eg, DNA with DAPI) or they can be immunolabeled with fluorochromes that are coupled to specific antibodies. Cell fixation is usually required for immunostaining.
 </StyledText></p>
-
+            <Experience />
             </div>
 
             </Grid>
