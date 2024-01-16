@@ -45,9 +45,7 @@ const TimelineExhibitions = ({setCont}) =>{
   <ExhibitionCard title="East Village" img="https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/b5a8e07b-7ef3-4eba-e35f-992793636a00/public" />
     
   <p className="pt-32 "> Laura your work is fascinating! Abstracting everyday materials into organic collages that reflect
-       the simbiotic relationship between science and art, your process is totally unique. With textures that
-       range from the wispy and delicate to the dense and saturated, your work resonates a sense of dynamisms and
-       change, of thing in flux or in development</p>
+       the simbiotic relationship between science and art, your process is totally unique.</p>
                         
      
   </div>
