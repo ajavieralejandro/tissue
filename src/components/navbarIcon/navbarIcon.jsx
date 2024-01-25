@@ -17,7 +17,10 @@ const StyledLink = styled(Link)`
 `; 
 
 const StyledDiv = styled.div`
-  padding-top: 20%;
+  padding-top: 15%;
+  @media (max-width: 600px) {
+    padding-top: 30%;
+  }
 `
 
 
@@ -66,15 +69,19 @@ function NavbarIcon() {
         </Burger>
         <Grid
   container
-  direction="row"
+  direction="column"
   justifyContent="center"
   alignItems="center"
 >
         <StyledDiv>
        
-                                  <StyledLink onClick={()=>setClicked(false)} to="abstract"  smooth={true} duration={800}><p>Abstract</p></StyledLink>
-                                  <StyledLink onClick={()=>setClicked(false)} to="video"  smooth={true} duration={800}><p>Under the microscope</p></StyledLink>
-                                  <StyledLink onClick={()=>setClicked(false)} to="about"  smooth={true} duration={800}><p>About me</p></StyledLink>
+                                 <div><StyledLink onClick={()=>setClicked(false)} to="abstract"  smooth={true} duration={800}><p>Abstract</p></StyledLink></div>
+                                 <div><StyledLink onClick={()=>setClicked(false)} to="inti"  smooth={true} duration={800}><p>Inti</p></StyledLink></div>
+
+                                 <div><StyledLink onClick={()=>setClicked(false)} to="about"  smooth={true} duration={800}><p>About me</p></StyledLink></div>
+ 
+                                 <div><StyledLink onClick={()=>setClicked(false)} to="video"  smooth={true} duration={800}><p>Under the microscope</p></StyledLink></div>
+                                 <div><StyledLink onClick={()=>setClicked(false)} to="exhibitions"  smooth={true} duration={800}><p>Exhibitions</p></StyledLink></div>
 
 
         </StyledDiv>
