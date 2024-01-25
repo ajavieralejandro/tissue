@@ -38,14 +38,18 @@ export default function Inti2({itemData}) {
   justifyContent="center"
   alignItems="center"
 >
+
             <Grid item xs={12} md={6}>
               
             <div className="grid h-full place-items-center p-12 	 ">
+            <section id="inti" >
+
             <h1 class="font-bebas-neue uppercase text-2xl sm:pt-12  sm:text-4xl font-black flex flex-col leading-none dark:text-white text-gray-800">
                     Inti
                 
                 </h1>
-               
+                </section>
+
 
             <p className=" text-sm">     <StyledText>Thank you very much for opening the doors to me @intiargentina.
 Fluorescence is widely used in microscopy and an important tool for observing the distribution of specific molecules. Most molecules in cells do not fluoresce. Therefore, they have to be labeled with fluorescent molecules called fluorochromes. Molecules of interest can be labeled directly, (eg, DNA with DAPI) or they can be immunolabeled with fluorochromes that are coupled to specific antibodies. Cell fixation is usually required for immunostaining.
@@ -62,9 +66,9 @@ Fluorescence microscopy also allows for time-lapse imaging of living cells or ti
 
 </StyledText>
 
-            </Grid>     
+            </Grid>  
+               
        </Grid>
 
-       
     );
 }

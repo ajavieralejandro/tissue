@@ -13,7 +13,7 @@ const Timeline = () => {
   const[cont,setCont] = useState(0);
 
     return (
-        <section>
+        <section id="exhibitions">
             <div class="bg-black text-white py-8">
               <VideoGallery />
             <div  class="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
