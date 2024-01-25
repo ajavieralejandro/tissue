@@ -51,17 +51,16 @@ const handleClick = (image)=>{
 }
 
 const handleClick2 = ()=>{
-    if(visible)
-  setVisible(!visible);
-  else
-  setCont(0);
+  console.log("Holaaa");
+      setCont(0);
 }
 
 
 
   return (
+    <>
+
     <Container >
-                <ArrowBackIcon  sx={{ color: 'white' }}  onClick={()=>setCont(0)} />
 
 
     <Fade timeout={2000} in={true} unmountOnExit>
@@ -73,6 +72,8 @@ const handleClick2 = ()=>{
     spacing={3}
   >
     <Grid item xs={12} md={6}> 
+    <ArrowBackIcon  sx={{ color: 'white' }}  onClick={()=>handleClick2(0)} />
+
     <article class="shadow-md mx-auto max-w-sm transform hover:-translate-y-1 duration-300 hover:shadow-xl cursor-pointer">
             <div class="max-h-140 overflow-hidden">
        
@@ -100,6 +101,7 @@ const handleClick2 = ()=>{
 
    
     </Container>
+    </>
   );
 }
 
