@@ -7,9 +7,11 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Cell(props) {
-  const { nodes, materials } = useGLTF('/cell.glb')
+  const { nodes, materials } = useGLTF('/cell.glb');
+  const groupRef = useRef();
+
   return (
-    <group {...props} dispose={null}>
+    <group ref={groupRef} {...props} dispose={null}>
       <mesh geometry={nodes['2'].geometry} material={materials['2']} position={[-0.599, 0, 0]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} />
       <mesh geometry={nodes.Sphere.geometry} material={materials['Material.001']} position={[-0.455, -0.03, 0.134]} scale={0.05} />
       <mesh geometry={nodes.Sphere001.geometry} material={materials['Material.002']} position={[-0.433, -0.133, 0.01]} scale={0.05} />

@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import {  BoxGeometry } from "three";
 import { Canvas,useThree } from "@react-three/fiber";
 import { Cell } from "./Cell/Cell";
+import { Suspense } from 'react'
 
 export const Experience = () => {
   
@@ -11,12 +12,14 @@ export const Experience = () => {
         <Canvas camera={
       {fov:10}
     }>
+        <Suspense fallback={null}>
 
               <OrbitControls  enableZoom={true} />
 
                     <ambientLight intensity={1} />
 
           <Cell />
+          </Suspense>
 </Canvas>
     </>
   );
