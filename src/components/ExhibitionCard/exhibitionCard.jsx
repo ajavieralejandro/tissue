@@ -22,7 +22,7 @@ export default function MediaCard({title,img}) {
     <StyledText className="text-xl font-medium title-font text-gray-900 text-center ">{title}</StyledText>
 
 
-      <div className="rounded-lg h-64 overflow-hidden">
+      <div className="rounded-lg h-full pt-12 md:h-64 overflow-hidden">
         <img alt="content" className="object-cover object-center h-full w-full" src={img} />
       </div>
 
