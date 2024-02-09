@@ -22,7 +22,7 @@ const Label = styled(Paper)(({ theme }) => ({
   borderBottomRightRadius: 0,
 }));
 
-export default function ImageMasonry() {
+export default function ImageMasonry({children}) {
   const [image,setImage] = useState("https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/d7faaf42-4749-4403-66ec-ae2238196e00/public");
   const [click,setClick] = useState(false);
 
@@ -33,75 +33,22 @@ export default function ImageMasonry() {
   }
   return (
     <>
-    <div className="h-full w-full">
+<div class="md:flex md:pt-32">
+      <Box sx={{ minWidth: 200, minHeight: 200}}>
+   <div class="grid grid-cols-2 text-center md:grid-cols-4 gap-4">
+   {itemData.map((item) => (
+          
+          
+            <img               onClick={()=>handleClick(item.img)}
+ class="h-32 max-w-full rounded-lg" src={`${item.img}`} alt={item.title}></img>
+            
+          
+        ))}
       
-      <div class="external">
-<div class="horizontal-scroll-wrapper">
-  <div class="img-wrapper slower">
-  <a target="_blank" rel="noopener">
+        </div>
+      <ModalFLyer open={click} setOpen={setClick  } image={image} />
 
-  <img src="https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/d7faaf42-4749-4403-66ec-ae2238196e00/public?w=248&fit=crop&auto=format&dpr=2" alt=""/>
-</a>
-  </div>
-
-  <div class="img-wrapper faster">
-    <a  target="_blank" rel="noopener">
-      <img src="https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/571a8439-08a8-4d69-2b6f-9979f6995b00/public?w=248&fit=crop&auto=format&dpr=2" alt=""/>
-    </a>
-  </div>
-
-  <div class="img-wrapper slower vertical">
-    
-    <a  target="_blank" rel="noopener">
-      <img src="https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/66390f17-a597-4b80-e311-953f5239d800/Tissue?w=248&fit=crop&auto=format&dpr=2" alt=""/>
-    </a>
-  </div>
-
-  <div class="img-wrapper slower slower-down">
-    <a  target="_blank" rel="noopener">
-      <img src="https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/9b53d02c-afe8-4780-167f-4079acadff00/public?w=248&fit=crop&auto=format&dpr=2" alt=""/>
-    </a>
-  </div>
-
-
-
-  <div class="img-wrapper slower">
-    <a target="_blank" rel="noopener">
-      <img src="https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/07a99c41-5a03-40e3-dab2-22278a6af700/Tissue?w=248&fit=crop&auto=format&dpr=2" alt=""/>
-    </a>
-  </div>
-
-  <div class="img-wrapper faster1">
-    <a  target="_blank" rel="noopener">
-      <img src="https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/62ffa013-33f6-4a82-3af3-c988c22a5300/Tissue?w=248&fit=crop&auto=format&dpr=2" alt=""/>
-    </a>
-  </div>
-  
-  <div class="img-wrapper slower slower2">
-    <a target="_blank" rel="noopener">
-      <img src="https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/1978dbfa-cb11-4917-2e93-f2560504d400/Tissue?w=248&fit=crop&auto=format&dpr=2" alt=""/>
-    </a>
-  </div>
-  
-  <div class="img-wrapper">
-    <a  target="_blank" rel="noopener">
-      <img src="https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/1978dbfa-cb11-4917-2e93-f2560504d400/Tissue?w=248&fit=crop&auto=format&dpr=2" alt=""/>
-    </a>
-  </div>
-  
-  <div class="img-wrapper slower">
-    <a target="_blank" rel="noopener">
-      <img src="https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/40cfbe0f-b183-4fa0-b245-1bf875af5d00/Tissue?w=248&fit=crop&auto=format&dpr=2" alt=""/>
-    </a>
-  </div>
-  
-  
-</div>
-
-</div>
-
-
-
+    </Box>
 
   </div>
   </>
@@ -141,5 +88,7 @@ const itemData = [
     img: 'https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/40cfbe0f-b183-4fa0-b245-1bf875af5d00/Tissue',
     title: 'Breakfast',
   }
+  
 ];
+
 
