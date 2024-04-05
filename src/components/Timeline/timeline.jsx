@@ -21,6 +21,9 @@ const Timeline = () => {
               <h1 class="font-bebas-neue uppercase justify-center text-3xl  font-black flex flex-col leading-none text-white">
                     Exhibitions
                 </h1>
+                <h1 class="pt-12 font-bebas-neue uppercase justify-center text-3xl  font-black flex flex-col leading-none text-white">
+                    Virtual Exhibitions
+                </h1>
               </div>
               <div class="ml-0 md:ml-12 lg:w-2/3 sticky">
                 {cont===0?<TimelineExhibitions setCont={setCont} />:null}
