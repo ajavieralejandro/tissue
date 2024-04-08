@@ -4,9 +4,10 @@ import {  BoxGeometry } from "three";
 import { Canvas,useThree } from "@react-three/fiber";
 import { Cell } from "./Cell/Cell";
 import { Suspense } from 'react'
-
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 export const Experience = () => {
-  
+  const matches = useMediaQuery('(min-width:600px)');
+
   return (
     <>
         <Canvas camera={
@@ -14,7 +15,7 @@ export const Experience = () => {
     }>
         <Suspense fallback={null}>
 
-              <OrbitControls  enableZoom={true} />
+              <OrbitControls  enableZoom={!matches} />
 
                     <ambientLight intensity={1} />
 
