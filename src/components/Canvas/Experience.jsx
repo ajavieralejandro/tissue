@@ -10,7 +10,7 @@ export const Experience = () => {
   return (
     <>
         <Canvas camera={
-      { fov: 10,  position: [1, 2, 3] }
+      { fov: 10,  position: [9, 2, 3] }
     }>
         <Suspense fallback={null}>
 
