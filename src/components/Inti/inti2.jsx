@@ -13,6 +13,8 @@ import ReactPlayer from "react-player"
 import YoutubeVideo from '../YoutubeVideo/youtubeVideo';
 import { Experience } from '../Canvas/Experience';
 import IntiGallery from '../IntiGallery/inti.gallery';
+import  useMediaQuery  from '@material-ui/core/useMediaQuery';
+
 const StyledText = styled.div`
 
 color : white;
@@ -30,6 +32,8 @@ padding-right: 2%;
 
 `
 export default function Inti2({itemData}) {
+  const matches = useMediaQuery('(min-width:600px)');
+
   return (
 
 <div>
@@ -61,7 +65,7 @@ Fluorescence is widely used in microscopy and an important tool for observing th
 </div>
             </Grid>
             <Grid item xs={12} md={6}>
-            <IntiGallery />
+            {matches?<IntiGallery />:<Card3 />}
 
             <StyledText className=" text-sm">
 Fluorescence microscopy also allows for time-lapse imaging of living cells or tissues. Hence, the proteins of interest can be tagged with genetically encoded fluorescent molecules such as GFP (green fluorescent protein). Molecules of interest can also be labeled using reversibly binding synthetic dyes (eg fura-2) or genetically modified naturally occurring proteins (eg GFP derivatives).

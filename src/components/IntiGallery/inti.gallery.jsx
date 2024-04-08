@@ -1,39 +1,23 @@
 
 
-const images = [
-    {
-      img: '',
-      title: 'Fern',
-    },
-    {
-      img: '',
-      title: 'Snacks',
-    },
-    {
-      img: '',
-      title: 'Mushrooms',
-    },
-    {
-      img: '',
-      title: 'Tower',
-    },
-    {
-      img: '',
-      title: 'Sea star',
-    },
-    {
-      img: '',
-      title: 'Honey',
-    },
-    {
-      img: '',
-      title: 'Basketball',
-    },
-    {
-      img: '',
-      title: 'Breakfast',
-    }]
+import styled from 'styled-components';
 
+const StyledText = styled.div`
+
+color : white;
+font-family : 'Simpletix';
+font-size :2rem;
+
+@media only screen and (max-width: 728px) {
+  font-size:0.8rem;
+}
+justify-content: center;
+margin : 10%;
+
+padding-left:2%;
+padding-right: 2%;
+
+`
 const IntiGallery = () =>{
     return(
         <>
@@ -46,18 +30,22 @@ const IntiGallery = () =>{
     </div>
 
     <div className="img-wrapper faster">
+    <StyledText>Fluorescence microscopy also allows for time-lapse imaging of living cells or tissues</StyledText>
+
       <a href="https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/40cfbe0f-b183-4fa0-b245-1bf875af5d00/Tissue" target="_blank" rel="noopener">
         <img src="https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/40cfbe0f-b183-4fa0-b245-1bf875af5d00/Tissue" alt="" />
       </a>
     </div>
 
     <div className="img-wrapper slower vertical">
+
       <a href="https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/66390f17-a597-4b80-e311-953f5239d800/Tissue" target="_blank" rel="noopener">
         <img src="https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/66390f17-a597-4b80-e311-953f5239d800/Tissue" alt="" />
       </a>
     </div>
-
     <div className="img-wrapper slower slower-down">
+    <StyledText>the proteins of interest can be tagged with genetically encoded fluorescent molecules</StyledText>
+
       <a href="https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/d7faaf42-4749-4403-66ec-ae2238196e00/public" target="_blank" rel="noopener">
         <img src="https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/d7faaf42-4749-4403-66ec-ae2238196e00/public" alt="" />
       </a>
@@ -87,7 +75,7 @@ const IntiGallery = () =>{
       </a>
     </div>
     
-    <div className="img-wrapper">
+    <div className="img-wrapper last">
       <a href="https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/1978dbfa-cb11-4917-2e93-f2560504d400/Tissue" target="_blank" rel="noopener">
         <img src="https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/1978dbfa-cb11-4917-2e93-f2560504d400/Tissue" alt="" />
       </a>
