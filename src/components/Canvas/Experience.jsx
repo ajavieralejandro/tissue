@@ -15,7 +15,7 @@ export const Experience = () => {
     }>
         <Suspense fallback={null}>
 
-              <OrbitControls  enableZoom={!matches} />
+              <OrbitControls  enableZoom={matches} />
 
                     <ambientLight intensity={1} />
 
