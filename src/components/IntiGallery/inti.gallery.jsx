@@ -44,7 +44,6 @@ const IntiGallery = () =>{
       </a>
     </div>
     <div className="img-wrapper slower slower-down">
-    <StyledText>the proteins of interest can be tagged with genetically encoded fluorescent molecules</StyledText>
 
       <a href="https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/d7faaf42-4749-4403-66ec-ae2238196e00/public" target="_blank" rel="noopener">
         <img src="https://imagedelivery.net/rXQkQjLMcsIgr9J-xeKCWA/d7faaf42-4749-4403-66ec-ae2238196e00/public" alt="" />

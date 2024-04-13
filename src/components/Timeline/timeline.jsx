@@ -9,7 +9,12 @@ import Card3d from "../3dCard/3dcard";
 import Brota from '../Brota/brota';
 import CasaSamana from '../CasaSamana/casaSamana';
 import EastVillage from '../EastVillage/eastVillage';
+import { useNavigate } from "react-router-dom";
 const Timeline = () => {
+  let navigate = useNavigate();
+  const handleClick = () =>{
+    navigate('/virtual_gallery');
+  }
   const[cont,setCont] = useState(0);
 
     return (
@@ -21,7 +26,7 @@ const Timeline = () => {
               <h1 class="font-bebas-neue uppercase justify-center text-3xl  font-black flex flex-col leading-none text-white">
                     Exhibitions
                 </h1>
-                <h1 class="pt-12 font-bebas-neue uppercase justify-center text-3xl  font-black flex flex-col leading-none text-white">
+                <h1 onClick={()=>handleClick()} class="pt-12 font-bebas-neue uppercase justify-center text-3xl  font-black flex flex-col leading-none text-white">
                     Virtual Exhibitions
                 </h1>
               </div>

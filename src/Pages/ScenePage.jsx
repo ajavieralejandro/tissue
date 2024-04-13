@@ -1,7 +1,9 @@
+import Navbar from "../components/Navbar/navbar";
+import Example from "../components/SceneTheater/example";
 const ScenePage = () =>{
     return(
         <>
-            <h1>Scene Page</h1>
+            <Example />
         </>
     )
 }
