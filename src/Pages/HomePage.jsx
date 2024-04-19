@@ -98,7 +98,7 @@ const HomePage = () => {
 
      </div>
       ) : (
-        <div className="main-container scroll-smooth h-screen w-screen" id='main-container'>
+        <div className=" scroll-smooth h-screen w-screen" >
         
              <Navbar />
 

@@ -18,11 +18,11 @@ const Timeline = () => {
   const[cont,setCont] = useState(0);
 
     return (
-        <section id="exhibitions">
-            <div class="bg-black text-white py-8">
+        <section id="exhibitions" className="h-screen w-screen">
+            <div class="bg-black text-white py-2">
               <VideoGallery />
             <div  class="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
-              <div class="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
+              <div class="text-left flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
               <h1 class="font-bebas-neue uppercase justify-center text-3xl  font-black flex flex-col leading-none text-white">
                     Exhibitions
                 </h1>

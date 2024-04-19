@@ -1,39 +1,78 @@
-import * as THREE from 'three'
-import { Canvas } from '@react-three/fiber'
-import { getProject } from '@theatre/core'
-import { SheetProvider } from '@theatre/r3f'
-import {  ScrollControls } from '@react-three/drei'
-import studio from '@theatre/studio'
-import extension from '@theatre/r3f/dist/extension'
-import TextureScene from './texture.scene'
-import demoScene from './demoScene.json'
-studio.initialize()
-studio.extend(extension)
+import {Canvas, useFrame} from '@react-three/fiber'
 
-// our Theatre.js project sheet, we'll use this later
-const sheet = getProject('Demo Project').sheet('Demo Sheet')
-//const sheet = getProject("Fly Through", {state: demoScene}).sheet("Scene");
+//Theatre Imports
+import { ScrollControls,useScroll,Scroll} from '@react-three/drei'
+import {getProject,val} from '@theatre/core';
+import demoProjectState from './demoScene.json'
+import Texture from './Texture';
+import {
+  SheetProvider, editable as e,
+  PerspectiveCamera, useCurrentSheet
+} from '@theatre/r3f';
+function App() {
 
-
-const Example = () => {
-
- 
-
+  const sheet = getProject('Demo Project',{state:demoProjectState}).sheet('Demo Sheet')
   return (
-    <Canvas
-      camera={{
-        position: [0, 0, 0],
-        fov: 75,
-      }}
-    >
-              <ScrollControls pages={5}>
+    <div className='h-screen w-screen'>
+    <Canvas gl={{preserveDrawingBuffer:true,phisicallyCorrectLight:true}}>
 
-          <SheetProvider sheet={sheet}>
-          <TextureScene />
+      <ScrollControls pages={5}>
+      <SheetProvider sheet={sheet}>
+
+    
+      <Scene />
+      <Scroll html>
+          <div className='bg-transparent'>
+          <section class="container bg-black mx-auto p-10 md:p-20 transform duration-500">
+        <article class="flex flex-wrap md:flex-nowrap shadow-lg mx-auto max-w-xl ">
+            <img class="w-full md:w-40 h-auto" src="https://weandthecolor.com/wp-content/uploads/2012/03/A-Way-Out-Illustration-by-Matheus-Lopes-4563464.jpg" alt="" />
+            <div class="p-10 my-auto">
+                <h1 class="text-2xl font-semibold text-gray-800">A Way Out</h1>
+                <p class="text-base text-gray-400 mt-2">
+                    Super creative and colorful illustrations by Matheus Lopes. Check out more of his amazing artworks in his portfolio.
+                </p>
+            </div>
+        </article>
+    </section>
+          </div>
+      </Scroll>
       </SheetProvider>
+
       </ScrollControls>
+      
+
     </Canvas>
+    
+    </div>
   )
 }
 
-export default Example;
+const Scene = () =>{
+  
+  const sheet = useCurrentSheet();
+  const scroll = useScroll();
+  useFrame(()=>{
+    //Try to understand and explain this twol lines
+    const sequenceLenght = val(sheet.sequence.pointer.length);
+    sheet.sequence.position = scroll.offset * sequenceLenght;
+
+  },[])
+
+  const bgColor = "#84a4f4";
+
+
+  return(
+    <>
+     <color attach="background" args={[bgColor]} />
+      <fog attach="fog" color={bgColor} near={4} far={15} />
+      <PerspectiveCamera theatreKey='Camara' makeDefault={true}
+      position={[0,0,0]}
+      fov={90} near={0.1} far={70} />
+
+  <directionalLight position={[3.3, 4.0, 4.4]} intensity={4} />
+          <Texture />
+    </>
+  )
+}
+
+export default App
