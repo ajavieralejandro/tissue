@@ -37,6 +37,7 @@ export default function Inti2({itemData}) {
   return (
 
 <div>
+{matches?<IntiGallery />:<Card3 />}
 
 <Grid
   container
@@ -46,8 +47,12 @@ export default function Inti2({itemData}) {
 >
 
             <Grid item xs={12} md={6}>
-              
-            <div className="grid h-full  justify-center place-items-center p-6 	 ">
+            <div className='md:h-screen md:w-full'>        <Experience />
+</div>
+          
+            </Grid>
+            <Grid item xs={12} md={6}>
+            <div className="grid h-full  justify-center place-items-center  	 ">
             <section id="inti" >
 
             <h1 class="font-bebas-neue uppercase text-2xl   sm:text-4xl font-black flex flex-col leading-none dark:text-white text-gray-800">
@@ -61,11 +66,6 @@ export default function Inti2({itemData}) {
             <p className=" text-sm">     <StyledText>Thank you very much for opening the doors to me @intiargentina.
 Fluorescence is widely used in microscopy and an important tool for observing the distribution of specific molecules. Most molecules in cells do not fluoresce. Therefore, they have to be labeled with fluorescent molecules called fluorochromes. Molecules of interest can be labeled directly, (eg, DNA with DAPI) or they can be immunolabeled with fluorochromes that are coupled to specific antibodies. Cell fixation is usually required for immunostaining.
 </StyledText></p>
-<div className='md:h-screen md:w-full'>        <Experience />
-</div>
-            </Grid>
-            <Grid item xs={12} md={6}>
-            {matches?<IntiGallery />:<Card3 />}
 
             <StyledText className=" text-sm">
 Fluorescence microscopy also allows for time-lapse imaging of living cells or tissues. Hence, the proteins of interest can be tagged with genetically encoded fluorescent molecules such as GFP (green fluorescent protein). Molecules of interest can also be labeled using reversibly binding synthetic dyes (eg fura-2) or genetically modified naturally occurring proteins (eg GFP derivatives).
@@ -76,7 +76,7 @@ Fluorescence microscopy also allows for time-lapse imaging of living cells or ti
             </Grid>  
                
        </Grid>
-         
+
 
        </div>
 

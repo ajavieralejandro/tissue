@@ -2,7 +2,7 @@ import {Canvas, useFrame} from '@react-three/fiber'
 import { Link } from 'react-router-dom';
 import Navbar from '../Navbar/navbar';
 //Theatre Imports
-import { ScrollControls,useScroll,Scroll} from '@react-three/drei'
+import { ScrollControls,useScroll,Scroll, OrbitControls} from '@react-three/drei'
 import {getProject,val} from '@theatre/core';
 import demoProjectState from './demoScene.json'
 import Texture from './Texture';
@@ -25,7 +25,7 @@ function App() {
       <Scene />
       <Scroll html>
 
-          <div className='bg-transparent'>
+          <div className='bg-transparent w-full h-full'>
           <section className="container   mx-auto p-10 md:p-20 transform duration-500">
 
         <article className="flex flex-wrap bg-black md:flex-nowrap shadow-lg mx-auto max-w-xl ">

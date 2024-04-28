@@ -33,7 +33,7 @@ export default function ImageMasonry({children}) {
   }
   return (
     <>
-<div class="md:flex md:pt-32">
+<div class="">
       <Box sx={{ minWidth: 200, minHeight: 200}}>
    <div class="grid grid-cols-2 text-center md:grid-cols-4 gap-4">
    {itemData.map((item) => (
