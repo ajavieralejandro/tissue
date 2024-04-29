@@ -37,7 +37,6 @@ export default function Inti2({itemData}) {
   return (
 
 <div>
-{matches?<IntiGallery />:<Card3 />}
 
 <Grid
   container
@@ -76,6 +75,7 @@ Fluorescence microscopy also allows for time-lapse imaging of living cells or ti
             </Grid>  
                
        </Grid>
+       {matches?<IntiGallery />:<Card3 />}
 
 
        </div>

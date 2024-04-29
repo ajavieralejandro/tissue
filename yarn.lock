@@ -3676,6 +3676,11 @@
     "@vimeo/player" "^2.16.4"
     "prop-types" "^15.7.2"
 
+"@uidotdev/usehooks@^2.4.1":
+  "integrity" "sha512-1I+RwWyS+kdv3Mv0Vmc+p0dPYH0DTRAo04HLyXReYBL9AeseDWUJyi4THuksBJcu9F0Pih69Ak150VDnqbVnXg=="
+  "resolved" "https://registry.npmjs.org/@uidotdev/usehooks/-/usehooks-2.4.1.tgz"
+  "version" "2.4.1"
+
 "@use-gesture/core@10.3.0":
   "integrity" "sha512-rh+6MND31zfHcy9VU3dOZCqGY511lvGcfyJenN4cWZe0u1BH6brBpBddLVXhF2r4BMqWbvxfsbL7D287thJU2A=="
   "resolved" "https://registry.npmjs.org/@use-gesture/core/-/core-10.3.0.tgz"

@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import "./style.scss";
+import { useMouse } from "@uidotdev/usehooks";
+
 // import CustomCursorContext from "./context/CustomCursorContext";
 
 // TODO: Hide if cursor not moved
@@ -24,9 +26,9 @@ const CustomCursor = () => {
       const mouseY = clientY;
 
       positionRef.current.mouseX =
-        mouseX - secondaryCursor.current.clientWidth / 2;
+        mouseX ;
       positionRef.current.mouseY =
-        mouseY - secondaryCursor.current.clientHeight / 2;
+        mouseY ;
     });
 
     return () => {};
